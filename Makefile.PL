@@ -6,7 +6,7 @@ manifest_skip;
 version_check;
 ack_xxx;
 
-requires 'Cog';
+requires 'Cog' => '0.02';
 requires 'Mouse';
 
 install_share;
