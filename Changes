@@ -1,4 +1,9 @@
 ---
+version: 0.02
+date:    Wed Dec 22 16:12:00 EST 2010
+changes:
+- Prereq on Cog::Cog until Cog is indexed properly.
+---
 version: 0.01
 date:    Mon Dec 20 22:21:00 EST 2010
 changes:

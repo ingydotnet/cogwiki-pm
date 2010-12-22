@@ -3,7 +3,7 @@ use 5.008003;
 use Mouse;
 extends 'Cog::Plugin';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub url_map {
     [
