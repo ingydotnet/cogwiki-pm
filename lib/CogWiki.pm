@@ -35,6 +35,13 @@ use Mouse;
 extends 'Cog::Maker';
 use IO::All;
 
+sub all_files {
+    my $self = shift;
+    return grep {
+        $_->filename =~ /\.cog$/;
+    } io($self->config->content_root)->all_files;
+}
+
 sub make_cache {
     my $self = shift;
     io('cache')->mkdir;
@@ -44,8 +51,7 @@ sub make_cache {
     my $blobs = {};
 
     $self->config->store->delete_tag_index; # XXX Temporary solution until can do smarter
-    for my $page_file (io($self->config->content_root)->all_files) {
-        next unless $page_file->filename =~ /\.cog$/;
+    for my $page_file ($self->all_files) {
         my $page = $self->config->classes->{page}->from_text($page_file->all);
         my $id = $page->Short or next;
 
