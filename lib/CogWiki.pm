@@ -12,6 +12,7 @@ package CogWiki::WebApp;
 use Mouse;
 extends 'Cog::WebApp';
 
+use constant SHARE_DIST => 'CogWiki';
 use constant url_map => [
     '()',
     ['/' => 'redirect', ('/pages/')],
