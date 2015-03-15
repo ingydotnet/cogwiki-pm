@@ -3,7 +3,7 @@ use 5.008003;
 use Mouse;
 extends 'Cog::App';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use constant webapp_class => 'CogWiki::WebApp';
 use constant maker_class => 'CogWiki::Maker';
@@ -161,31 +161,3 @@ sub simple_to_html {
 }
 
 1;
-
-=encoding utf8
-
-=head1 NAME
-
-CogWiki - Cog Based Wiki Framework
-
-=head1 SYNOPSIS
-
-    > cog init CogWiki
-    > cog update
-    > cog make
-    > cog start
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2010, 2011. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut

@@ -1,0 +1,10 @@
+<<<cpan-head>>>
+
+=head1 SYNOPSIS
+
+    > cog init CogWiki
+    > cog update
+    > cog make
+    > cog start
+
+<<<cpan-tail>>>

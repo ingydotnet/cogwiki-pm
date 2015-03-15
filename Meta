@@ -1,0 +1,29 @@
+=meta: 0.0.2
+
+name: CogWiki
+version: 0.03
+abstract: Cog Based Wiki Framework
+homepage: https://metacpan.org/release/CogWiki
+language: perl
+license: perl
+copyright: 2010-2015
+
+author:
+  name: Ingy döt Net
+  email: ingy@cpan.org
+  homepage: http://ingy.net
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+
+devel:
+  git: https://github.com/ingydotnet/cogwiki-pm
+  bug: https://github.com/ingydotnet/cogwiki-pm/issues
+  irc: irc.freenode.net#pkg
+
+requires:
+  perl: 5.8.1
+  Cog: 0.05
+  Mouse: 0
+
+badge: travis
