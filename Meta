@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: CogWiki
-version: 0.03
+version: 0.04
 abstract: Cog Based Wiki Framework
 homepage: https://metacpan.org/release/CogWiki
 language: perl

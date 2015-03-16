@@ -1,15 +1,14 @@
 package CogWiki;
-use 5.008003;
-use Mouse;
+use Mo;
 extends 'Cog::App';
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use constant webapp_class => 'CogWiki::WebApp';
 use constant maker_class => 'CogWiki::Maker';
 
 package CogWiki::WebApp;
-use Mouse;
+use Mo;
 extends 'Cog::WebApp';
 
 use constant SHARE_DIST => 'CogWiki';
@@ -32,7 +31,7 @@ use constant site_navigation => [
 ];
 
 package CogWiki::Maker;
-use Mouse;
+use Mo;
 extends 'Cog::Maker';
 use IO::All;
 
@@ -63,7 +62,7 @@ sub make_cache {
 
         $self->config->store->index_tag($_, $id)
             for $self->all_tags($page);
-            
+
         my $blob = {
             %$page,
             Id => $id,
